@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-n2bs1GlkrEqG2KU2uTxnRMmQlbdj6qpOWO4LPC/V8Rc='; style-src 'self'; img-src 'self'; connect-src 'self' https://api.github.com; font-src 'none'; object-src 'none'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#11181a" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="A training log and programme reference that works offline." />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Kintsugido" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <title>Kintsugido</title>
+    <script>
+      // Apply a stored light or dark choice before first paint (src/shell/theme.ts).
+      (() => {
+        let choice = null;
+        try {
+          choice = window.localStorage.getItem('kintsugido.theme');
+        } catch {
+          // Storage refused: follow the device's own light or dark setting.
+        }
+        if (choice === 'light' || choice === 'dark') {
+          document.documentElement.setAttribute('data-theme', choice);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-UtlfM3tq.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-g_hoTUYu.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="app"></div>
+    <noscript>This app needs JavaScript. Nothing stored on this device is affected.</noscript>
+  </body>
+</html>
