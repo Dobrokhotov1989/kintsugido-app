@@ -19,9 +19,22 @@ developer's machine is therefore absent: none of it is here to distribute.
 The licence text of each package is copied verbatim from the copy installed
 when the build ran.
 
-If this directory gained a package that is not listed, the build that produced
-it would have failed. That is the point of generating the file rather than
-maintaining it.
+### What that check does and does not cover
+
+Every package this build resolved from `node_modules` is listed here, and a
+bundled package whose licence text could not be read stops the build rather
+than being listed without its terms. That is why the list is generated rather
+than maintained: it cannot fall behind the code beside it.
+
+Three things are outside it, and a reader should know they are not covered:
+
+- files copied verbatim from the project's `public/` folder, which never pass
+  through the build's module graph;
+- third-party code kept inside the project's own source tree instead of being
+  installed as a package, which is indistinguishable here from code we wrote;
+- a dependency that ships a copy of *its* dependencies already bundled into
+  its published files, which appears as that one package and is attributed to
+  it alone.
 
 ## The 4 packages in this build
 
@@ -42,8 +55,11 @@ first build that uses them:
 
 ### The service worker
 
-`sw.js` is built separately, from this project's own source only. The build
-fails if a third-party package ever reaches it without being added here.
+`sw.js` is built separately, from this project's own source only. This file is
+written by the application build, which runs first and cannot see that second
+one, so the rule there is stricter: **any** third-party package reaching the
+service worker fails the build — listed here or not — rather than being
+carried into the artifact unrecorded.
 
 ---
 
