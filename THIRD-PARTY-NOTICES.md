@@ -38,7 +38,7 @@ Three things are outside it, and a reader should know they are not covered:
 
 ## The 4 packages in this build
 
-Their code is in `assets/index-UtlfM3tq.js`.
+Their code is in `assets/index-fGeuu5le.js`.
 
 - **@preact/signals** 2.11.2 — MIT
 - **@preact/signals-core** 1.14.4 — MIT
@@ -67,7 +67,7 @@ carried into the artifact unrecorded.
 
 - Declared licence: MIT
 - Copyright (c) 2022-present Preact Team
-- Installed at `node_modules/@preact/signals`; contributed 3 274 bytes to `assets/index-UtlfM3tq.js`.
+- Installed at `node_modules/@preact/signals`; contributed 3 274 bytes to `assets/index-fGeuu5le.js`.
 
 `node_modules/@preact/signals/LICENSE`:
 
@@ -99,7 +99,7 @@ SOFTWARE.
 
 - Declared licence: MIT
 - Copyright (c) 2022-present Preact Team
-- Installed at `node_modules/@preact/signals-core`; contributed 4 910 bytes to `assets/index-UtlfM3tq.js`.
+- Installed at `node_modules/@preact/signals-core`; contributed 4 910 bytes to `assets/index-fGeuu5le.js`.
 
 `node_modules/@preact/signals-core/LICENSE`:
 
@@ -131,7 +131,7 @@ SOFTWARE.
 
 - Declared licence: ISC
 - Copyright (c) 2016, Jake Archibald <jaffathecake@gmail.com>
-- Installed at `node_modules/idb`; contributed 11 177 bytes to `assets/index-UtlfM3tq.js`.
+- Installed at `node_modules/idb`; contributed 11 177 bytes to `assets/index-fGeuu5le.js`.
 
 `node_modules/idb/LICENSE`:
 
@@ -148,7 +148,7 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 - Declared licence: MIT
 - Copyright (c) 2015-present Jason Miller
-- Installed at `node_modules/preact`; contributed 13 141 bytes to `assets/index-UtlfM3tq.js`.
+- Installed at `node_modules/preact`; contributed 13 141 bytes to `assets/index-fGeuu5le.js`.
 
 `node_modules/preact/LICENSE`:
 
